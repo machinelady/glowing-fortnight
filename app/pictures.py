@@ -9,7 +9,7 @@ from settings_loader import config
 def find_picture(topic, potential_keywords):
     flickr = flickrapi.FlickrAPI(config["API_KEY"], config["API_SECRET"], format='parsed-json')
     pictures = flickr.photos.search(tags=topic, text=random.choice(potential_keywords),
-                                    licenses=[2, # cc-by-nc 
+                                    license=[2, # cc-by-nc 
                                               4, # cc-by
                                               7],# no known copyright restrictions
                                     per_page=10) 

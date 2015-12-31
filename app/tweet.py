@@ -8,5 +8,5 @@ if __name__ == '__main__':
     topics = random_quote["potential_topics"]
 
     link = pictures.find_picture("cat", topics)
-    tweet = '"{}" {} {}'.format(text, link)
+    tweet = '"{}" {}'.format(text, link)
     print tweet
